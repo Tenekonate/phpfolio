@@ -1,0 +1,10 @@
+services:
+  php-fpm-7.4:
+    build: php-fpm-7
+    volumes:
+     - ../:/var/www/${COMPOSE_PROJECT_NAME}
+
+  php-fpm-8:
+    build: php-fpm-8
+    volumes:
+     - ../:/var/www/${COMPOSE_PROJECT_NAME}
